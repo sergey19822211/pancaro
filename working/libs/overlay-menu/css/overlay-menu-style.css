@@ -1,0 +1,80 @@
+header{
+	position:fixed;
+	z-index:100;
+	width: 100%;
+	padding:30px 0;
+	background: black;
+}
+
+.logo{
+	display: inline-block;
+}
+
+.fa-bars{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    cursor: pointer;
+}
+
+
+#full-menu {
+    position: fixed;
+    z-index: 999;
+    padding: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    display: none;
+    overflow: hidden;
+    background: #000;
+    opacity: 0;
+}
+.menu-container {
+    text-align: right;
+    margin-top: 250px;
+}
+.full-menu {
+    list-style: none;
+    margin: 0;
+    clear: left;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    text-align: center;
+}
+.full-menu > li {
+    display: block;
+    position: relative;
+    margin: 0;
+}
+.full-menu > li > a {
+    display: block;
+    font-size: 35px;
+    line-height: 1;
+    font-weight: 400;
+    color: #fff;
+    padding: 15px 0;
+	transition: all 500ms ease; 
+}
+.full-menu > li > a:hover {
+    color: #cf000f;
+}
+
+
+.menu-close {
+    background: rgba(0, 0, 0, 0) url("../../../img/close.png") no-repeat 0px -14px;
+    position: absolute;
+    height: 14px;
+    width: 14px;	
+    right: 40px;
+    top: 40px;
+    transition: none 1s ease 0s;
+    z-index: 30;
+}
+
+.menu-close:hover{
+	 background: rgba(0, 0, 0, 0) url("../../../img/close.png") no-repeat 0px 0px;   
+}
